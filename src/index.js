@@ -151,7 +151,7 @@ class ManualCount extends React.Component{
       onDrag={this.handleDrag}
       onStop={this.handleStop}
       onClick={()=>this.props.onClick()}>
-        <button className="btn btn-primary handle" onClick={()=>this.props.onClick()}>
+        <button className="btn btn-primary handle" onTouchStart={()=>this.props.onClick()} onClick={()=>this.props.onClick()}>
           click for Tasbeeh
         </button>
       </Draggable>);}
